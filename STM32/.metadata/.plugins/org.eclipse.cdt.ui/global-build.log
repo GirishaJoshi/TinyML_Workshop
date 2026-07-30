@@ -1,25 +1,25 @@
-14:19:02 **** Incremental Build of configuration Debug for project Interfacing_MPU6050 ****
+09:48:09 **** Incremental Build of configuration Debug for project Interfacing_onboard ****
 make -j16 all 
-arm-none-eabi-size  Interfacing_MPU6050.elf 
+arm-none-eabi-gcc "../Core/Src/imu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/imu.d" -MT"Core/Src/imu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/imu.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:295:1: warning: control reaches end of non-void function [-Wreturn-type]
+  295 | }
+      | ^
+arm-none-eabi-gcc -o "Interfacing_onboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TinyML_GJ\TinyML_Workshop\STM32\Interfacing_onboard\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Interfacing_onboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Interfacing_onboard.elf
+ 
+arm-none-eabi-size  Interfacing_onboard.elf 
+arm-none-eabi-objdump -h -S Interfacing_onboard.elf  > "Interfacing_onboard.list"
    text	   data	    bss	    dec	    hex	filename
-  32748	    468	   2180	  35396	   8a44	Interfacing_MPU6050.elf
+  41828	    468	   2156	  44452	   ada4	Interfacing_onboard.elf
 Finished building: default.size.stdout
  
-14:19:08 **** Incremental Build of configuration Debug for project Interfacing_MPU6050 ****
-make -j16 all 
-arm-none-eabi-size  Interfacing_MPU6050.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32748	    468	   2180	  35396	   8a44	Interfacing_MPU6050.elf
-Finished building: default.size.stdout
+Finished building: Interfacing_onboard.list
  
-14:19:44 **** Incremental Build of configuration Debug for project Interfacing_MPU6050 ****
-make -j16 all 
-arm-none-eabi-size  Interfacing_MPU6050.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32748	    468	   2180	  35396	   8a44	Interfacing_MPU6050.elf
-Finished building: default.size.stdout
- 
-14:50:03 **** Incremental Build of configuration Debug for project Interfacing_MPU6050 ****
+09:48:50 **** Incremental Build of configuration Debug for project Interfacing_MPU6050 ****
 make -j16 all 
 arm-none-eabi-size  Interfacing_MPU6050.elf 
    text	   data	    bss	    dec	    hex	filename

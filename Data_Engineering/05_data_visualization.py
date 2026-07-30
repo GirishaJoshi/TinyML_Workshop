@@ -15,7 +15,7 @@ plt.xlabel("Sample Number")
 plt.ylabel("Acceleration")
 plt.legend()
 plt.grid(True)
-plt.ylim(-2, 2)
+
 
 
 plt.show()
