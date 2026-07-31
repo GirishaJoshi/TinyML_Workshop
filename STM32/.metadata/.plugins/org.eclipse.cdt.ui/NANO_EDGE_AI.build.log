@@ -1,0 +1,10 @@
+15:36:13 **** Incremental Build of configuration Debug for project NANO_EDGE_AI ****
+make -j16 all 
+arm-none-eabi-size  NANO_EDGE_AI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  56888	    488	  19160	  76536	  12af8	NANO_EDGE_AI.elf
+Finished building: default.size.stdout
+ 
+
+15:36:13 Build Finished. 0 errors, 0 warnings. (took 323ms)
+

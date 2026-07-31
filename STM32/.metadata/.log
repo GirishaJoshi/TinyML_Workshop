@@ -466,3 +466,23 @@ java.io.IOException: Error opening \\.\COM6 (2)
 	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
 	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-31 12:24:39.768
+!MESSAGE Indexed 'NANO_EDGE_AI' (30 sources, 95 headers) in 6.34 sec: 9,309 declarations; 71,786 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0025%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-31 12:32:09.757
+!MESSAGE Indexed 'NANO_EDGE_AI' (27 sources, 95 headers) in 2.6 sec: 13,557 declarations; 60,696 references; 0 unresolved inclusions; 3 syntax errors; 4 unresolved names (0.0054%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-31 15:34:00.514
+!MESSAGE Indexed 'NANO_EDGE_AI' (26 sources, 94 headers) in 2.33 sec: 11,676 declarations; 58,738 references; 0 unresolved inclusions; 3 syntax errors; 4 unresolved names (0.0057%)
+
+!ENTRY org.eclipse.remote.console 4 0 2026-07-31 15:34:21.999
+!MESSAGE Error opening \\.\COM7 (2)
+!STACK 0
+java.io.IOException: Error opening \\.\COM7 (2)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
