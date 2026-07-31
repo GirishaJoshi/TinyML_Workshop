@@ -24,6 +24,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "network.h"
+#include "ai_platform.h"
 #include "network_data.h"
 /* USER CODE END Includes */
 
